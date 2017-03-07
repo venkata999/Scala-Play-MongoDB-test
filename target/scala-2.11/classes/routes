@@ -1,0 +1,4 @@
+# Routes
+
+GET    /userdata                    controllers.UserController.userDataForm
+POST   /userdata                    controllers.UserController.userDataSubmit

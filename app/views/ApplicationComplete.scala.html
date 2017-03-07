@@ -1,0 +1,16 @@
+@(username: String)
+
+@main("User Application") {
+    @if(!username.startsWith("error")){
+        <h1>Application Complete</h1>
+        <h2>Thanks you
+            <font color="red">@username</font>
+            for applying to this useful government service
+        </h2>
+    }else{
+    <h2>
+        <font color="red">@username
+        Please correct errors on the form</font>
+    </h2>
+    }
+}

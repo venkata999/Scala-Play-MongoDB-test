@@ -1,5 +1,3 @@
-# Scala-Play-MongoDB-test
-
 ***************************************************
 Installation
 PLease download code and add it in  IntelliJ as 'Open Project'
@@ -9,12 +7,12 @@ Open browser
 http://localhost:9000/userdata
 
 ***************************************************
-Some points to highlight
+Some points to highlight:-
 
 1. I used Casbah libraries to connect to Mongo DB
 2. I have tested this in Chrome browser in my Mac
 ***************************************************
-Due to lack of time, Some of the Requirements are not done.
+Yet to improve:-
 
 1. Complete Field level validations not done
 2. Tests for all methods have not been written

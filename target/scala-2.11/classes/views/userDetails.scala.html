@@ -1,0 +1,19 @@
+@(userform: Form[UserData], countries: Seq[(String, String)])
+
+@import helper._
+@import play.api.Play.current
+@import play.api.i18n.Messages.Implicits._
+<h1>Some Useful Government Service</h1>
+@main("User Application") {
+
+    @helper.form(action = routes.UserController.userDataSubmit) {
+        @inputText(userform("name"))
+        @inputText(userform("sex"))
+        @inputText(userform("age"))
+        @select(field = userform("country"), options = countries)
+        @inputText(userform("datecreated"))
+        <div class="buttons">
+            <input type="submit" value="Apply"/>
+        </div>
+    }
+}
